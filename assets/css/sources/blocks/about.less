@@ -1,0 +1,73 @@
+.about {
+  color: @color-white;
+
+  &__image {
+    background: url(../images/bg.png) no-repeat center/cover;
+    padding: 1rem 16rem;
+  }
+  &__main-title {
+    text-transform: uppercase;
+    font-family: "Myriad Pro";
+    font-size: 10rem;
+    vertical-align: center;
+    font-weight: 400;
+
+  }
+  &__bold {
+    font-weight: 700;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #e1e9f0;
+    padding: 1rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  &__link {
+    color: @color-dark-grey;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    transition: 1s;
+    font-weight: bold;
+    
+    &:hover {
+      color: @color-light-blue;
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 650px) {
+  .about__nav {
+    display: none;
+  }
+
+  .about__main-title {
+    font-size: 8rem;
+  }
+
+  .about__image {
+    padding: 5rem 10rem 3rem;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+  .about__main-title {
+    font-size: 6rem;
+  }
+
+  .about__image {
+    padding: 7rem 5rem 3rem;
+  }
+
+}

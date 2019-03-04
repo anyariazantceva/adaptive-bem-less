@@ -1,0 +1,56 @@
+.food {
+  background-color: @color-light-grey;
+  overflow: hidden;
+
+  &__text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 65%;
+    height: auto;
+  }
+
+  &__title {
+    width: 35%;
+    padding: 8rem 5rem 0 0;
+    font-size: 2.4rem;
+    font-weight: 300;
+    letter-spacing: 0.48px;
+    line-height: 3.4rem;
+  }
+
+  &__bold {
+    display: block;
+    margin-top: 3rem;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 2.4rem;
+  }
+
+  &__note {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .food__text {
+    flex-direction: column-reverse;
+  }
+
+  .food__title {
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    padding: 3rem 6rem 0;
+  }
+
+  .food__image {
+    width: 100%;
+  }
+}

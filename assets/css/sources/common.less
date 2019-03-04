@@ -1,0 +1,45 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2rem;
+  font-family: @font-family;
+  font-weight: 400;
+  line-height: 1.2;
+
+}
+
+.page {
+  max-width: 100%;
+  width: 100%;
+
+}
+
+a {
+  text-decoration: none;
+  color: @color-white;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 45%;
+  }
+}
